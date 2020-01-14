@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="recyclerview_item_width">150dp</dimen>
+    <dimen name="explorer_image_offset">3dp</dimen>
+    <dimen name="minimum_offset_for_grid_view">30dp</dimen>
+
+    <dimen name="toolbar_offset">20dp</dimen>
+    <dimen name="kounsel_text_width">74dp</dimen>
+    <dimen name="kounsel_text_height">23dp</dimen>
+
+</resources>

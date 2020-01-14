@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Kounsel</string>
+
+
+    <string name="california">California</string>
+    <string name="what_do_you_need_help_with">What do you need help with?</string>
+
+
+    <string name="all">All</string>
+    <string name="health">Health</string>
+    <string name="legal">Legal</string>
+    <string name="pet_care">Pet Care</string>
+    <string name="fashion">Fashion</string>
+    <string name="auto_care">Auto Care</string>
+    <string name="architect">Architect</string>
+    <string name="veterinarian">Veterinarian</string>
+    <string name="esl_teacher">ESL Teacher</string>
+    <string name="learning_and_teaching">Learning/Teaching</string>
+
+    <string name="more">More</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="new_counselors">New Counselors</string>
+
+
+    <string name="therapy">Therapy</string>
+    <string name="alternative_medicine">Alternative Medicine</string>
+    <string name="eye_care">Eye Care</string>
+    <string name="immigration_law">Immigration Law</string>
+    <string name="tax_law">Tax Law</string>
+    <string name="family_law">Family Law</string>
+
+</resources>

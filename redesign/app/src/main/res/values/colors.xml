@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#dae2eb</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white_two">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="navy_blue">#002452</color>
+    <color name="pale_grey">#dae2eb</color>
+
+    <color name="greyblue">#7d96b3</color>
+    <color name="nice_blue">#1565c0</color>
+    <color name="darkish_blue">#003c8f</color>
+    <color name="nice_blue_two">#1587c0</color>
+
+    <color name="macaroni_and_cheese">#e59937</color>
+    <color name="ocean_blue">#0072ac</color>
+    <color name="white">#fcfcfc</color>
+    <color name="topaz">#15bac0</color>
+    <color name="topaz_two">#159ec0</color>
+    <color name="dusty_orange">#ef812a</color>
+    <color name="tomato">#f0602b</color>
+    <color name="pinkish_purple">#c161d9</color>
+    <color name="seaweed">#17cb79</color>
+</resources>

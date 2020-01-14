@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/categoryRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+      >
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/categoryNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:text="@string/health"
+            android:textColor="@color/nice_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/categoryMoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/gotham_rounded_medium"
+            android:gravity="end"
+            android:text="@string/more"
+            android:textColor="@color/greyblue"
+            android:textSize="14sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/categoryMoreTextView"
+            android:id="@+id/categoryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>

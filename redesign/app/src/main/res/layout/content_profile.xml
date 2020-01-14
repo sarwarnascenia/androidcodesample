@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:id="@+id/profileNestedScrollView"
+    android:layout_marginTop="-35dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/profile_white_top_curve">
+
+        <TextView
+            android:id="@+id/profileNameTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:text="Nannie Moreno"
+            android:textColor="@color/navy_blue"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profileCategoryTextView"
+            android:fontFamily="@font/gotham_rounded_book"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clinical Social Worker"
+            android:textColor="@color/navy_blue"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/profileNameTextView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/ratting_review_rv"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileCategoryTextView">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/star_favorite_filled" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/star_favorite_filled" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/star_favorite_filled" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/ic_star_favorite_half_filled" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/ic_star_favorite_not_filled" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/gotham_rounded_medium"
+                    android:gravity="end"
+                    android:textColor="@color/navy_blue"
+                    android:textSize="14sp"
+                    android:text="3.7" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:fontFamily="@font/gotham_rounded_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 Reviews"
+                    android:textColor="@color/nice_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/separatorOneView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/pale_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratting_review_rv" />
+
+        <TextView
+            android:id="@+id/highlightTextView"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="Highlights"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorOneView"
+            />
+
+        <LinearLayout
+            android:weightSum="3"
+            android:id="@+id/categoryRateLinearLayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/highlightTextView">
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/gotham_rounded_medium"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/greyblue"
+                    android:text="Category"
+                    />
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/gotham_rounded_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_blue"
+                    android:text="Health"
+                /></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/gotham_rounded_medium"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/greyblue"
+                android:text="Rate"
+                />
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/gotham_rounded_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_blue"
+                    android:text="600 usd/h"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:id="@+id/countryStateLinearLayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryRateLinearLayout">
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/gotham_rounded_medium"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/greyblue"
+                    android:text="Country"
+                    />
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/gotham_rounded_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_blue"
+                    android:text="USA"
+                /></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/gotham_rounded_medium"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/greyblue"
+                android:text="State"
+                />
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/gotham_rounded_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_blue"
+                    android:text="California"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/languageTextView"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/gotham_rounded_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/greyblue"
+            android:text="LANGUAGE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/countryStateLinearLayout"
+            />
+        <TextView
+            android:id="@+id/languageListTextView"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="English, Spanish, French, German"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageTextView"
+            />
+
+        <View
+            android:id="@+id/separatorTwoView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/pale_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageListTextView" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="Description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorTwoView"
+            />
+        <TextView
+            android:fontFamily="@font/gotham_rounded_book"
+            android:layout_marginTop="15dp"
+            android:id="@+id/descriptionValueTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:lineSpacingExtra="10sp"
+            android:text="When television was young, there was a hugely popular show based on the still popular fictional character of Superman The opening of that show ha…"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTextView"
+            />
+        <View
+            android:id="@+id/separatorThreeView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/pale_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionValueTextView" />
+
+        <TextView
+            android:id="@+id/skillTextView"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorThreeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="Skills"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/skillRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skillTextView"/>
+
+        <View
+            android:id="@+id/separatorFourView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/pale_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skillRecyclerView" />
+
+
+        <TextView
+            android:id="@+id/availabilityTextView"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="Availability"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorFourView"
+            />
+
+<LinearLayout
+    android:id="@+id/availabilityLinearLayout"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/availabilityTextView"
+    >
+        <TextView
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/circle_green"
+            android:fontFamily="@font/gotham_rounded_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/seaweed"
+            android:text="Available Now"/>
+
+    <TextView
+        android:fontFamily="@font/gotham_rounded_medium"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/navy_blue"
+        android:lineSpacingExtra="3sp"
+        android:text="- until 5PM"
+        />
+
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/specialDayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/greyblue"
+            android:text="SPECIAL DAYS"
+
+            android:fontFamily="@font/gotham_rounded_medium"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/availabilityLinearLayout"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/specialDayValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/specialDayTextView"/>
+
+        <View
+            android:id="@+id/separatorFiveView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/pale_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/specialDayValueTextView" />
+
+        <TextView
+            android:id="@+id/portfolioTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorFiveView"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="Portfolio"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/portfolioRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/portfolioTextView"/>
+
+        <View
+            android:id="@+id/separatorSixView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/pale_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/portfolioRecyclerView" />
+
+        <TextView
+            android:id="@+id/attachmentsTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorSixView"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="Attachments"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/attachmentsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/attachmentsTextView"/>
+        <TextView
+            android:id="@+id/licenseTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/attachmentsRecyclerView"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="License"
+            />
+
+        <TextView
+            android:id="@+id/licenseNameTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/licenseTextView"
+            android:fontFamily="@font/gotham_rounded_book"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="CALIFORNIA - 6868GHHJ"
+            />
+
+        <TextView
+            android:id="@+id/lisenceDetailsTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/licenseNameTextView"
+            android:fontFamily="@font/gotham_rounded_book"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/greyblue"
+            android:lineSpacingExtra="6sp"
+            android:text="Expire on: 20 Feb 2019
+Architects, Board
+United States"
+            />
+
+        <RelativeLayout
+            android:id="@+id/viewAllMoreRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lisenceDetailsTextView">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_rounded_medium"
+                android:gravity="left"
+                android:lineSpacingExtra="3sp"
+                android:text="3 more"
+                android:textColor="@color/navy_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_rounded_medium"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/nice_blue"
+                android:textSize="14sp"
+                android:text="View All" />
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/separatorSevenView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/pale_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAllMoreRelativeLayout" />
+
+        <RelativeLayout
+            android:id="@+id/similarProfileRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorSevenView">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="Similar Profiles"
+            />
+            <TextView
+                android:fontFamily="@font/gotham_rounded_medium"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/greyblue"
+                android:gravity="end"
+                android:text="More"
+                />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/counselorRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/similarProfileRelativeLayout">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:id="@+id/separatorEightView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/pale_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/counselorRecyclerView" />
+        <TextView
+            android:id="@+id/reviewAllTextView"
+            android:fontFamily="@font/gotham_rounded_bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorEightView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:text="5 Reviews"
+            />
+
+
+        <LinearLayout
+            android:layout_marginTop="17dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reviewAllTextView"
+            android:id="@+id/reviewStartLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/star_favorite_filled" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/star_favorite_filled" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/star_favorite_filled" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ic_star_favorite_half_filled" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/ic_star_favorite_not_filled" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/gotham_rounded_medium"
+                android:gravity="end"
+                android:textColor="@color/navy_blue"
+                android:textSize="14sp"
+                android:text="3.7" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reviewStartLinearLayout"
+            android:id="@+id/reviewTextView"
+            android:fontFamily="@font/gotham_rounded_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:lineSpacingExtra="10sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Nannie was great with us. My husband and I needed someone to assist us with all our social work we had for our organization and she immediately understood our requirements and needs. Her communication skills were fantastic and she was always available to any questions we would have."
+            />
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/reviewerLinearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reviewTextView"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/reviewerImageView"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_marginLeft="17dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/reviewerNameTextView"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/gotham_rounded_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/navy_blue"
+                    android:text="Margaret Robinson"
+                    />
+                <TextView
+                    android:layout_below="@+id/reviewerNameTextView"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/gotham_rounded_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/greyblue"
+                    android:lineSpacingExtra="6sp"
+                    android:text="Nov 2018"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/readAllReviewTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reviewerLinearLayout"
+            android:fontFamily="@font/gotham_rounded_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/nice_blue"
+            android:text="Read All Reviews"
+            />
+
+
+        <View
+            android:id="@+id/separatorNineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/pale_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/readAllReviewTextView" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/flatListingTextView"
+            android:fontFamily="@font/gotham_rounded_book"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_flag"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separatorNineView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/nice_blue"
+            android:text="Flag Listing"
+            />
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/privecyPolicyTextView"
+            android:fontFamily="@font/gotham_rounded_book"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_padlock"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flatListingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/nice_blue"
+            android:text="Privacy Policy"
+            />
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/termsAndConditionTextView"
+            android:fontFamily="@font/gotham_rounded_book"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_terms_and_conditions"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/privecyPolicyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/nice_blue"
+            android:text="Terms and Condition"
+            />
+
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/termsAndConditionTextView"
+            android:id="@+id/bottomGapView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

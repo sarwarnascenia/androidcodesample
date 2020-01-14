@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <ImageView
+        android:id="@+id/mainImageVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dental_care"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:id="@+id/counselorDetailsRelativeLayout"
+        android:layout_width="@dimen/recyclerview_item_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainImageVIew">
+
+        <TextView
+            android:fontFamily="@font/gotham_rounded_book"
+            android:id="@+id/counselorNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/navy_blue"
+            android:text="Nannie Moreno" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/CounselorTypeTextView"
+            android:fontFamily="@font/gotham_rounded_medium"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/counselorNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/navy_blue"
+            android:lineSpacingExtra="3sp"
+            android:text="Clinical Social Worker"
+            />
+        <RelativeLayout
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:id="@+id/counselorRateRatingRelativeLayout"
+            android:layout_below="@+id/CounselorTypeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/gotham_rounded_medium"
+                android:layout_gravity="left"
+                android:id="@+id/CounselorRateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/greyblue"
+                android:text="600 usd / h "
+                />
+
+            <TextView
+                android:fontFamily="@font/gotham_rounded_medium"
+                android:layout_gravity="right"
+                android:id="@+id/CounselorRatingTextView"
+                android:drawableLeft="@drawable/star_favorite_filled"
+                android:drawablePadding="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/navy_blue"
+                android:gravity="end"
+                android:text="3.7"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,251 @@
+{
+  "project_info": {
+    "project_number": "582092791978",
+    "firebase_url": "https://project-2229039926989578476.firebaseio.com",
+    "project_id": "project-2229039926989578476",
+    "storage_bucket": "project-2229039926989578476.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582092791978:android:4e7784e43d61cd6e",
+        "android_client_info": {
+          "package_name": "co.mirach.kounsel.android.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582092791978-i3hamq3qurta98fedesmq2f8idto31f9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.mirach.kounsel.android.dev",
+            "certificate_hash": "a9933ff4bfcfe41080d100524a7bd9a4a644bd27"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXJ9-ZdxkOnCF6aXXrLr5EN7xrn8z9V9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582092791978-8gl983n9qpngpq5om3c20oq9pqnoh1sg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582092791978-m2qfme8srva6crh14lbkri05650gqtjb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.mirach.kounsel.ios.int"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582092791978:android:1dce590cb726aca8",
+        "android_client_info": {
+          "package_name": "co.mirach.kounsel.android.int"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582092791978-96urscg0h4svpbuvmtom1ddptk796559.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.mirach.kounsel.android.int",
+            "certificate_hash": "a9933ff4bfcfe41080d100524a7bd9a4a644bd27"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXJ9-ZdxkOnCF6aXXrLr5EN7xrn8z9V9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582092791978-8gl983n9qpngpq5om3c20oq9pqnoh1sg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582092791978-m2qfme8srva6crh14lbkri05650gqtjb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.mirach.kounsel.ios.int"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582092791978:android:3400554f7cc5b8dd",
+        "android_client_info": {
+          "package_name": "co.mirach.kounsel.redesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582092791978-70pqilve03e4rumqjcdtd5gfbtkb68eo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.mirach.kounsel.redesign",
+            "certificate_hash": "b073487ff825c904f33891d628dfbc2a6361a69e"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXJ9-ZdxkOnCF6aXXrLr5EN7xrn8z9V9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582092791978-8gl983n9qpngpq5om3c20oq9pqnoh1sg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582092791978-m2qfme8srva6crh14lbkri05650gqtjb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.mirach.kounsel.ios.int"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582092791978:android:487c3525efbc97b1",
+        "android_client_info": {
+          "package_name": "com.app.kounselcategory.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582092791978-n8d6utrcqa85suknvb3niok13q9r9k9r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.kounselcategory.dev",
+            "certificate_hash": "a9933ff4bfcfe41080d100524a7bd9a4a644bd27"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXJ9-ZdxkOnCF6aXXrLr5EN7xrn8z9V9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582092791978-8gl983n9qpngpq5om3c20oq9pqnoh1sg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582092791978-m2qfme8srva6crh14lbkri05650gqtjb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.mirach.kounsel.ios.int"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582092791978:android:5c8d697bcb5d526c",
+        "android_client_info": {
+          "package_name": "com.mhire.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582092791978-adros22vh5fgmbulnpuh1fbkd1oogjdp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mhire.android",
+            "certificate_hash": "90e25ab238ef4706d209a64c0650033016ad0bff"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXJ9-ZdxkOnCF6aXXrLr5EN7xrn8z9V9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582092791978-8gl983n9qpngpq5om3c20oq9pqnoh1sg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582092791978-m2qfme8srva6crh14lbkri05650gqtjb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.mirach.kounsel.ios.int"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582092791978:android:7daf1497f5081db1",
+        "android_client_info": {
+          "package_name": "com.mhire.android.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582092791978-2nl00m3alvsn3nhds48lo1h3is4foacj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mhire.android.debug",
+            "certificate_hash": "a9933ff4bfcfe41080d100524a7bd9a4a644bd27"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXJ9-ZdxkOnCF6aXXrLr5EN7xrn8z9V9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582092791978-8gl983n9qpngpq5om3c20oq9pqnoh1sg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582092791978-m2qfme8srva6crh14lbkri05650gqtjb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.mirach.kounsel.ios.int"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainRelativeLayout"
+    android:layout_width="310dp"
+    android:layout_height="@dimen/recyclerview_item_width"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <ImageView
+        android:id="@+id/mainImageVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dental_care"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/inactiveRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:alpha=".6"
+            android:id="@+id/inactiveRoundCurveImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/categoryNameInactiveTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/gothamrounded_bold_ttf"
+            android:lineSpacingExtra="2sp"
+            android:text="Oral Care"
+            android:textColor="@color/white_two"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:id="@+id/activeRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/activeRoundCurveImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/categoryNameActiveTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/gothamrounded_bold_ttf"
+            android:lineSpacingExtra="2sp"
+            android:text="Oral Care"
+            android:textColor="@color/white_two"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>
